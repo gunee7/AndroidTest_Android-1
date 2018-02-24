@@ -38,7 +38,6 @@ public class AlgorithmListActivity extends BaseActivity implements View.OnClickL
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, FindMultipleActivity.class);
                 startActivity(intent);
-
             }
         });
 
@@ -63,7 +62,33 @@ public class AlgorithmListActivity extends BaseActivity implements View.OnClickL
 
     @Override
     public void onClick(View view) {
-        Toast.makeText(mContext, "버튼이 눌림", Toast.LENGTH_SHORT).show();
+
+        if (view.getId() == R.id.gugudanBtn) {
+//            맞다 => 구구단버튼이 눌림.
+
+            Toast.makeText(mContext, "구구단 버튼 클릭", Toast.LENGTH_SHORT).show();
+
+        }
+        else if (view.getId() == R.id.starBtn) {
+//            별찍기 버튼 클릭
+            Toast.makeText(mContext, "별찍기 버튼 클릭", Toast.LENGTH_SHORT).show();
+        }
+
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

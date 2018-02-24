@@ -1,11 +1,12 @@
 package kr.co.idealidea.androidtest;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /*
     작성일 : 2018년 2월 24일
@@ -25,6 +26,7 @@ public class FindMultipleActivity extends BaseActivity {
     private android.widget.EditText secondNumEdt;
     private android.widget.Button findMultipleBtn;
     private android.widget.TextView resultTxt;
+    private android.widget.LinearLayout resultLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,10 +52,21 @@ public class FindMultipleActivity extends BaseActivity {
                 String firstString = firstNumEdt.getText().toString();
 
 //                받아온 String을 int로 변환. Integer이용. => Wrapper클래스.
-                int firstNum = Integer.parseInt(firstString);
+                int firstNum = 0;
 
                 String secondString = secondNumEdt.getText().toString();
-                int secondNum = Integer.parseInt(secondString);
+                int secondNum = 0;
+
+                try {
+                    firstNum = Integer.parseInt(firstString);
+                    secondNum = Integer.parseInt(secondString);
+                }
+                catch (Exception e) {
+                    e.printStackTrace();
+                    Toast.makeText(mContext, "입력에 문제가 발생했습니다.", Toast.LENGTH_SHORT).show();
+                    return; // 메쏘드 강제 종료.
+                }
+
 
 
 //                2. 두개의 숫자의 최소공배수를 탐색. => JAVA 알고리즘
@@ -78,7 +91,9 @@ public class FindMultipleActivity extends BaseActivity {
 
                 String resultStr = String.format("%d 입니다.", result);
                 resultTxt.setText(resultStr);
+//                resultTxt.text = resultStr;
 
+                resultLayout.setVisibility(View.VISIBLE);
 
 
             }
@@ -93,7 +108,7 @@ public class FindMultipleActivity extends BaseActivity {
 
     @Override
     public void bindViews() {
-
+        this.resultLayout = (LinearLayout) findViewById(R.id.resultLayout);
         this.resultTxt = (TextView) findViewById(R.id.resultTxt);
         this.findMultipleBtn = (Button) findViewById(R.id.findMultipleBtn);
         this.secondNumEdt = (EditText) findViewById(R.id.secondNumEdt);

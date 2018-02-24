@@ -64,6 +64,8 @@
         android:text="최소 공배수 찾기"/>
 
     <LinearLayout
+        android:id="@+id/resultLayout"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
