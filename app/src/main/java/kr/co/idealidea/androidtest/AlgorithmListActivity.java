@@ -71,7 +71,7 @@ public class AlgorithmListActivity extends BaseActivity implements View.OnClickL
         }
         else if (view.getId() == R.id.starBtn) {
 //            별찍기 버튼 클릭
-            Intent intent = new Intent(mContext, MakeStartActivity.class);
+            Intent intent = new Intent(mContext, MakeStarActivity.class);
             startActivity(intent);
         }
 

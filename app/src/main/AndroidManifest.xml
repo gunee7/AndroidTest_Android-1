@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".FindMultipleActivity" />
-        <activity android:name=".MakeStartActivity"></activity>
+        <activity android:name=".MakeStarActivity"></activity>
     </application>
 
 </manifest>

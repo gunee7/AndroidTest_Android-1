@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="kr.co.idealidea.androidtest.MakeStartActivity">
+    tools:context="kr.co.idealidea.androidtest.MakeStarActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,6 +49,7 @@
 
         <TextView
             android:id="@+id/resultTxt"
+            android:textSize="20sp"
             android:text="별찍기가 나타납니다."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
