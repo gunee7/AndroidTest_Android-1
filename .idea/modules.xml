@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidTest.iml" filepath="$PROJECT_DIR$/AndroidTest.iml" />
+      <module fileurl="file://D:\work\AndroidTest_Android\AndroidTest.iml" filepath="D:\work\AndroidTest_Android\AndroidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidTest_Android.iml" filepath="$PROJECT_DIR$/AndroidTest_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
