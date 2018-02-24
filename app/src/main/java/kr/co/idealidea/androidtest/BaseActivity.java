@@ -18,6 +18,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     //    findViewById를 모아둔 메쏘드.
     public abstract void bindViews();
 
+
 }
 
 

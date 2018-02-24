@@ -4,8 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-public class AlgorithmListActivity extends BaseActivity {
+/*
+    작성일 : 2018년 2월 24일
+    작성자 : 조경진
+    제작의도 : 알고리즘 테스트 문제 화면으로 넘어가는 액티비티.
+ */
+
+public class AlgorithmListActivity extends BaseActivity implements View.OnClickListener {
 
 
     private Button multipleBtn;
@@ -25,13 +32,19 @@ public class AlgorithmListActivity extends BaseActivity {
     @Override
     public void setupEvents() {
 
+//        터치 이벤트가 발생시 대응 코드
         multipleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, FindMultipleActivity.class);
                 startActivity(intent);
+
             }
         });
+
+
+        starBtn.setOnClickListener(this);
+        gugudanBtn.setOnClickListener(this);
 
     }
 
@@ -45,6 +58,12 @@ public class AlgorithmListActivity extends BaseActivity {
         this.gugudanBtn = (Button) findViewById(R.id.gugudanBtn);
         this.starBtn = (Button) findViewById(R.id.starBtn);
         this.multipleBtn = (Button) findViewById(R.id.multipleBtn);
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        Toast.makeText(mContext, "버튼이 눌림", Toast.LENGTH_SHORT).show();
 
     }
 }
