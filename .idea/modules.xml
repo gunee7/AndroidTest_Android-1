@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://D:\work\AndroidTest_Android\AndroidTest.iml" filepath="D:\work\AndroidTest_Android\AndroidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AndroidTest_Android.iml" filepath="$PROJECT_DIR$/AndroidTest_Android.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\coffee_bean_order\AndroidTest_Android-1\AndroidTest_Android.iml" filepath="C:\Users\Administrator\Desktop\coffee_bean_order\AndroidTest_Android-1\AndroidTest_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AndroidTest_Android-1.iml" filepath="$PROJECT_DIR$/.idea/AndroidTest_Android-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Administrator\Desktop\coffee_bean_order\AndroidTest_Android-1\app\app.iml" filepath="C:\Users\Administrator\Desktop\coffee_bean_order\AndroidTest_Android-1\app\app.iml" />
     </modules>
   </component>
 </project>
